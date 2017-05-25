@@ -1,0 +1,53 @@
+@media(max-width:399px) {
+	.criteria-element{
+		text-align: center;
+	}
+	.criteria-element > *:first-child {
+		margin-bottom: 5px;
+	}
+	.criteria-element > * {
+		display: block;
+		width: 100%;
+	}
+}
+@media(min-width:400px){
+	#criteria form > div {
+		display: table;
+		width: 100%;
+	}
+	#criteria form > div > div > div {
+		display: block;
+	}
+	.criteria-element {
+		width: 100%;
+		display: table;
+		white-space: nowrap;
+		padding-right: 0;
+		margin-bottom: 5px;
+	}
+	.criteria-element > * {
+		display: table-cell;
+	}
+	.criteria-element > *:first-child {
+		width: 10em;
+	}
+	.criteria-element > *:last-child {
+		width: 100%;
+	}
+}
+
+@media(min-width:700px){
+	#criteria form > div > div {
+		display: table-row;
+	}
+	#criteria form > div > div > div {
+		display: table-cell;
+	}
+	div:not(:last-child) > .criteria-element{
+		padding-right: .5em;
+	}
+}
+
+@media print{
+	#criteria{display:none}
+}

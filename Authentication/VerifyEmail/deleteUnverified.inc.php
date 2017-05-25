@@ -1,0 +1,1 @@
+<?php //Removes old unverified accounts

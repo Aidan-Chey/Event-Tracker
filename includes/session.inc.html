@@ -1,0 +1,38 @@
+<script src="/js/session_timeout.js" async></script>
+<style>
+	#sessionReseter{
+		display:none;
+		position:fixed;
+		top:50%;
+		left:50%;
+		z-index:100;
+		margin-left: -175px;
+		margin-top: -150px;
+		width: 350px;
+		height: 11em;
+		padding: 5px;
+		background-color:hsl(210,75%,54%);
+		border:2px solid hsl(0,100%,0%);
+	}
+	#sessionOverlay{
+		display:none;
+		background-color:hsla(0,0%,0%,.6);
+		height: 100%;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index:90;
+	}
+</style>
+<div id="sessionOverlay"></div>
+<div id="sessionReseter">
+	<b>Attention!</b>
+	<br>
+	You have been detected as inactive for a while.<br>Your session will timeout in <span id="count"></span> seconds. <br> Do you wish to continue?
+	<br>
+	<p>
+		<button onclick="stopInterval()">Continue</button>
+		<button onclick="logout()">Logout</button>
+	</p>
+</div>

@@ -1,0 +1,115 @@
+#Transaction p>span{
+margin: 10px;
+}
+#Transaction p>span:last-child{
+margin-right: 0px;
+}
+#Transaction p>span:first-child{
+margin-left: 0px;
+}
+#audit>div
+,#Transaction>div{
+text-align: center;
+}
+#audit table
+,#Transaction table{
+display: inline-block;
+text-align: initial;
+}
+#audit table td{
+max-width: none;
+}
+#Transaction tbody td:last-child
+,#Transaction tbody td:nth-child(2){
+max-width: 30em !important;
+}
+#audit>div table td{
+text-align: left;
+}
+#audit table tbody td:last-child{
+width: auto;
+}
+#compare{
+border-collapse: collapse;
+display: table;
+}
+#compare thead,p label{
+font-weight: bold;
+}
+#compare tr:not(:nth-last-child(2)){
+border-bottom: 1px solid black;
+}
+#compare tr:last-child{
+border: none;
+}
+#compare tr td{
+padding: 0px 8px;
+word-wrap: break-word;
+}
+#compare thead{
+text-align: left;
+}
+#compare .hiddenHead{
+font-weight: 700;
+visibility: hidden;
+}
+#compare tbody td:first-child{
+text-align: right;
+}
+#compare thead td{
+padding:0px;
+text-align: center;
+}
+#compare tbody tr:not(:last-child) td:first-child{
+border-right: 2px solid black;
+padding-left: 0px;
+}
+#compare tbody tr:not(:last-child) td:last-child{
+border-left: 2px solid black;
+padding-right: 0px;
+}
+#compare tbody tr{
+white-space: normal;
+}
+#compare tbody td:not(:first-child){
+word-break: break-all;
+}
+#compare tbody td:last-child{
+width: auto;
+}
+@media (max-width:840px){
+	#Results table tbody
+	,#compare
+	,#compare tbody{
+	display: block;
+	}
+	#compare thead td{
+	width: 4em !important;
+	}
+	#compare tbody{
+	margin: 0px;
+	overflow: hidden;
+	overflow-x:auto;
+	}
+	#compare tbody td{
+	overflow: visible;
+	text-overflow: clip;
+	vertical-align: top;
+	padding: 0 5px !important;
+	}
+	#compare tbody tr
+	,#compare tbody td{
+	border: none !important;
+	}
+	#compare tbody td:not(:first-child){
+	overflow-y:auto;
+	}
+	#compare thead td:not(:first-child)
+	,#compare tbody td:not(:first-child){
+	height: 5em;
+	}
+	#compare tbody td:not(:last-child)
+	,#compare thead td:not(:last-child){
+	border-bottom: 2px solid black !important;
+	}
+}

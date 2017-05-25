@@ -1,0 +1,193 @@
+#calendar{
+background-color:hsl(0,0%,93.5%);
+border-collapse: collapse;
+text-align: center;
+font-size: 90%;
+vertical-align: middle;
+white-space: nowrap;
+margin: 0 auto;
+border:3px solid black;
+max-height: 100vh;
+max-height: 100%;
+margin-bottom: 10px;
+}
+#calendar th{
+padding:.5em;
+}
+#calendar tr+tr{
+border-top:2px solid black;
+}
+#calendar td+td,#calendar th,#calendar th+td{
+border-right:3px solid black;
+}
+#calendar td{
+padding: 0;
+max-width:11.3em;
+vertical-align: top;
+}
+#calendar tr:nth-child(2n){
+background-color: hsla(0,0%,0%,.07);
+}
+#calendar label{
+cursor:pointer;
+display: block;
+}
+#calendar div>article{
+position: relative;
+}
+#calendar div>article+article{
+margin-top: .8em;
+}
+#calendar td>label{
+display: block;
+height: 2.25em;
+}
+#calendar td div{
+padding:.3em;
+top: 0em;
+z-index:10;
+position:absolute;
+background-color: hsla(210, 75%, 54%, 0.95);
+white-space: nowrap;
+border-radius: 6px;
+box-shadow: 0 3px 20px 3px rgba(0, 0, 0, .8);
+}
+#calendar td>div{
+min-width:15em;
+left: 4em;
+}
+#calendar td:last-child>div,#calendar td:nth-last-child(2)>div,#calendar td:nth-last-child(3)>div,#calendar td:nth-last-child(4)>div{
+left: auto;
+right: 4em;
+}
+#calendar article>div{
+width: 25em;
+white-space: normal;
+left: 14em;
+}
+#calendar td:last-child>div>article>div,#calendar td:nth-last-child(2)>div>article>div,#calendar td:nth-last-child(3)>div>article>div,#calendar td:nth-last-child(4)>div>article>div,#calendar td:nth-last-child(5)>div>article>div,#calendar td:nth-last-child(6)>div>article>div,#calendar td:nth-last-child(7)>div>article>div,#calendar td:nth-last-child(8)>div>article>div{
+left: auto;
+right: 14em;
+}
+#calendar tr:last-child>td>div
+,#calendar tr:nth-last-child(2)>td>div
+,#calendar tr:nth-last-child(3)>td>div
+,#calendar tr:nth-last-child(4)>td>div
+,#calendar tr:nth-last-child(5)>td>div
+,#calendar tr:nth-last-child(6)>td>div
+,#calendar tr:nth-last-child(7)>td>div
+,#calendar tr:nth-last-child(8)>td>div
+,#calendar tr:nth-last-child(9)>td>div
+,#calendar tr:nth-last-child(10)>td>div{
+top: auto;
+bottom: 0em;
+}
+#calendar tr:last-child>td>div>article>div
+,#calendar tr:nth-last-child(2)>td>div>article>div
+,#calendar tr:nth-last-child(3)>td>div>article>div
+,#calendar tr:nth-last-child(4)>td>div>article>div
+,#calendar tr:nth-last-child(5)>td>div>article>div
+,#calendar tr:nth-last-child(6)>td>div>article>div
+,#calendar tr:nth-last-child(7)>td>div>article>div{
+top: auto;
+bottom: 0em;
+}
+#calendar label span{
+display:block;
+max-width: 20em;
+text-overflow:ellipsis;
+overflow:hidden;
+}
+h2{
+margin: 0;
+padding: .5em 0;
+}
+.button{
+padding:.5em !important;
+}
+.optionsLabel{
+line-height: 100%;
+}
+.options{
+position: absolute;
+background-color: hsla(210, 75%, 54%, 0.95);
+padding:.3em;
+left: 7em;
+top: .5em;
+z-index:10;
+width: 143px;
+text-align: left;
+box-shadow: 0 3px 20px 3px rgba(0, 0, 0, .8);
+}
+.options .button{
+width: 8em;
+text-align: center;
+}
+.key{
+text-align: center;
+}
+.key>div{
+display: inline-block;
+width: 15em;
+padding: 0 4px;
+font-weight: 700;
+text-align: center;
+}
+
+#calendar>thead { border-bottom: 2px solid black; }
+#calendar>thead,#calendar>tfoot{
+background-color: hsla(0, 0%, 20%, .4);
+position: relative;
+display: block;
+}
+#calendar>tfoot{
+border-top: 2px solid black;
+}
+#calendar>tbody{
+display: block;
+max-height: 75vh;
+padding-right: 18px;
+}
+#calendar>tbody th{
+background-color: hsla(0, 0%, 20%, .4);
+}
+#calendar td,#calendar th{
+min-width: 5em;
+position: relative;
+}
+#infoForm{
+display: inline;
+}
+#infoForm select{
+font-weight: 700;
+}
+#calFooter>div>*{
+display:block;
+text-align: center;
+}
+#calendar .button{
+margin: 0;
+font-size: 90%;
+}
+
+@media (min-width:400px){
+	#calFooter>div{
+	text-align: center;
+	}
+	#calFooter>div>*{
+	display: inline-block;
+	}
+}
+@media (min-width:550px){
+	#calFooter{
+	white-space:nowrap;
+	position:relative;}
+
+	#calFooter>div{
+	display: inline;}
+
+	#calFooter>div:last-child{
+	top: 8px;
+	right: 8px;
+	position:absolute;}
+}

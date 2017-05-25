@@ -1,0 +1,28 @@
+<section>
+	<?php if(!empty($_SESSION['messages'])): ?>
+	<div class="error"><?php echo $_SESSION['messages']; ?></div>
+	<?php endif; ?>
+	<h2>Administration</h2>
+	<div class="category">
+		<div class="option">
+			<div><a class="button" href="/Admin/Users">Users</a></div>
+			<div>Manage user accounts</div>
+		</div>
+		<div class="option">
+			<div><a class="button" href="/Admin/Export">Export</a></div>
+			<div>Export Events</div>
+		</div>
+		<div class="option">
+			<div><a class="button" href="/Admin/Import">Import</a></div>
+			<div>Import Events</div>
+		</div>
+		<div class="option">
+			<div><a class="button" href="/Admin/Email">Email Subscribers</a></div>
+			<div>Emails users whom have not unsubscribed</div>
+		</div>
+		<div class="option">
+			<div><a class="button" href="/Admin/?Archive">Archive Events</a></div>
+			<div>Archives all finished events that are a month old</div>
+		</div>
+	</div>
+</section>

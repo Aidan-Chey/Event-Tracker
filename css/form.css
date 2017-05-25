@@ -1,0 +1,56 @@
+.form-element > textarea {
+display: block;
+}
+.form-element
+,fieldset {
+margin-bottom: 5px;
+}
+@media(max-width:399px) {
+	.form-element{
+	text-align: center;
+	}
+	.form-element > *:first-child {
+	margin-bottom: 5px;
+	}
+	.form-element > * {
+	display: block;
+	width: 100%;
+	}
+}
+@media(min-width:400px) {
+	.form-element {
+	display: table;
+	width: 100%;
+	}
+	.form-element > * {
+	display: table-cell;
+	}
+	.form-element > *:first-child {
+	width: 8em;
+	}
+	.form-element > *:last-child {
+	display: block;
+	width: 100%;
+	}
+}
+@media(min-width:700px) {
+	.dateTime {
+		display: table;
+	}
+	.dateTime > div {
+		display: table-row;
+	}
+	.dateTime > div > div {
+		display: table-cell;
+		vertical-align: top;
+	}
+	div:not(:last-child) > .form-element {
+		padding-right: 5px;
+	}
+}
+@media print{
+	body{
+	font-size:80%;
+	}
+}
+
